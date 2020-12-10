@@ -8,9 +8,6 @@ public class AnimalMain {
     private static String sound;
     private static int hoursOfSleep;
 
-    public static void main(String[] args) {
-    }
-
     public static void setPet(Boolean pet) {
         isPet = pet;
     }
@@ -43,28 +40,14 @@ public class AnimalMain {
         return sound;
     }
 
-
     public static double move() {
-    if (isPet)  {
-        return 0.25;
-    } else {
-        return 0.5;
+        if (isPet) {
+            return 0.25;
+        } else {
+            return 0.5;
+        }
     }
-
 }
 
 
-//
-//            public static void sleep () {
-//                System.out.println("Animal is sleeping for 8 hours.");
-//            }
-//
-//            public static void makeNoise (animal, noise){
-//
-//            }
-//
-//            public static void eating (animal, eats) {
-//                System.out.println(" The animal" + animal "loves to eat: " = eats);
-//            }
 
-}

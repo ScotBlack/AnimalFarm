@@ -14,8 +14,6 @@ public class Main {
         Wolf willem = new Wolf(false, "Willem de Zwijger", "Male", "Vollenhove Flat", "Tomorrow", "ZeistWestSide", "Spain");
         System.out.println(willem.getNameOfShelter());
         System.out.println(willem.move());
-
-
     }
 
 }
