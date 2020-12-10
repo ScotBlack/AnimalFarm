@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../../:\Users\Ian Hupkes\Documents\IT\Novi Back-End\Les2\Les 02\SE-BE-JP-Relaties_en_Overerving\src\nl\novi\javaprogrammeren\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
