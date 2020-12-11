@@ -5,7 +5,6 @@ public class Person {
     private String lastName;
     private String gender;
 
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

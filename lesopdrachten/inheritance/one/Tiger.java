@@ -21,40 +21,42 @@ public class Tiger extends AnimalMain {
 
 
 
-//    public void setLastFed(String lastFed) {
-//        this.lastFed = lastFed;
-//    }
-//
-//    public String getLastFed() {
-//        return lastFed;
-//    }
-//
-//    public void setNameOfShelter(String nameOfShelter) {
-//        this.nameOfShelter = nameOfShelter;
-//    }
+    public void setLastFed(String lastFed) {
+        this.lastFed = lastFed;
+    }
+
+    public String getLastFed() {
+        return lastFed;
+    }
+
+    public void setNameOfShelter(String nameOfShelter) {
+        this.nameOfShelter = nameOfShelter;
+    }
 
     public String getNameOfShelter() {
         return nameOfShelter;
     }
 
-//    public void setCountryOrigin(String countryOrigin) {
-//        this.countryOrigin = countryOrigin;
-//    }
-//
-//    public String getCountryOrigin() {
-//        return countryOrigin;
-//    }
-//
-//    public void setNumStripes(int numStripes) {
-//        this.numStripes = numStripes;
-//    }
-//
-//    public int getNumStripes() {
-//        return numStripes;
-//    }
+    public void setCountryOrigin(String countryOrigin) {
+        this.countryOrigin = countryOrigin;
+    }
+
+    public String getCountryOrigin() {
+        return countryOrigin;
+    }
+
+    public void setNumStripes(int numStripes) {
+        this.numStripes = numStripes;
+    }
+
+    public int getNumStripes() {
+        return numStripes;
+    }
 
     public String toString() {
-        return "Hello my name is " + getName() + ". How are you doing?";
+        return  "Hello my name is " + getName() + ". I was born in: " + getCountryOrigin() + ". How are you doing? "
+                + petToString() + " that does " + getSound() + ". I was last fed on: " + getLastFed() + ". I sleep in "
+                + getNameOfShelter() + " and I have " + getNumStripes() + " stripes.";
     }
 
     public int goSleep() {

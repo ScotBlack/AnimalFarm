@@ -1,8 +1,32 @@
-package nl.novi.javaprogrammeren.lesopdrachten.relaties.one;
+package lesopdrachten.relaties.one;
 
 public class DogOwnerMain {
+    public static void main(String[] args) {
+        Dog bobby = new Dog("Bobby", "male", "Golden Retriever", 8 );
+        Dog felix = new Dog("Felix", "male", "Chihuahau", 3);
+        DogOwner sjoerd = new DogOwner("Sjoerd", "man");
 
-    /*
+        System.out.println(bobby.dogToString());
+        System.out.println(felix.dogToString());
+
+        sjoerd.addDog(bobby);
+        sjoerd.addDog(felix);
+
+        System.out.println(sjoerd.showInfo());
+
+        bobby.addYear();
+
+        System.out.println(sjoerd.showInfo());
+
+        sjoerd.changeDogName("Herman");
+
+        System.out.println(sjoerd.showInfo());
+    }
+}
+
+
+
+/*
     Opdracht
     Geef de klasse Dog de volgende instance variables: name, species, age, sex. Datatypes mag je zelf verzinnen.
     De sex en species variables mogen na instantiatie niet meer aangepast worden.
@@ -18,9 +42,3 @@ public class DogOwnerMain {
 
     Instantieer hieronder de objecten en laat zien dat je code werkt.
      */
-
-    public static void main(String[] args) {
-
-    }
-
-}

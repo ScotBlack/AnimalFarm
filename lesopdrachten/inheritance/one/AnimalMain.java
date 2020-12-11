@@ -40,11 +40,19 @@ public class AnimalMain {
         return sound;
     }
 
-    public static double move() {
+    public static String move() {
         if (isPet) {
-            return 0.25;
+            return getName() + " moves " + 0.25;
         } else {
-            return 0.5;
+            return getName() + " moves " + 0.5;
+        }
+    }
+
+    public static String petToString() {
+        if (getPet()) {
+            return "I am a pet";
+        } else {
+            return "I am a wild animal";
         }
     }
 }
