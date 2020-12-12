@@ -1,6 +1,13 @@
-package nl.novi.javaprogrammeren.huiswerk.relaties.one;
+package huiswerk.relaties.one;
 
 public class MainCar {
+
+    public static void main(String[] args) {
+        Car golfje = new Car("234-AB-12", "Volkswagen", "Golf", 234_123, false);
+    }
+}
+
+
     /*
     Maak de volgende drie klassen:
     CarOwner, Car, CarDealer.
@@ -23,7 +30,3 @@ public class MainCar {
     Extra: Voeg een variabele leeftijd toe aan CarOwner. Check daarna altijd of de CarOwner wel 18 of ouder is.
 
      */
-    public static void main(String[] args) {
-
-    }
-}
