@@ -18,8 +18,6 @@ public class BirdOwner {
 
     public String getName() { return name; }
 
-    public String getSex() { return sex; }
-
     public List<Bird> getBirds() { return birds; }
 
     public List<Bird> getSelectedBirds() { return selectedBirds; }
@@ -41,18 +39,18 @@ public class BirdOwner {
             if (getBirds().get(birdInt).getSex() == "male" && maleInt < 3 && !getSelectedBirds().contains(birds.get(birdInt)))  {
                 maleInt++;
                 getSelectedBirds().add(birds.get(birdInt));
-                System.out.println(birds.get(birdInt).getNickName() + " was added. \n Males:" + maleInt + "\n Females:" + femaleInt + "\n Total selected: " + getSelectedBirds().size());
+//                System.out.println(birds.get(birdInt).getNickName() + " was added. \n Males:" + maleInt + "\n Females:" + femaleInt + "\n Total selected: " + getSelectedBirds().size());
             } else if (getBirds().get(birdInt).getSex() == "female" && femaleInt < 3 && !getSelectedBirds().contains(birds.get(birdInt)) ) {
                 femaleInt++;
                 getSelectedBirds().add(birds.get(birdInt));
-                System.out.println(birds.get(birdInt).getNickName() + " was added. \n Males:" + maleInt + "\n Females:" + femaleInt + "\n Total size: " + getSelectedBirds().size());
+//                System.out.println(birds.get(birdInt).getNickName() + " was added. \n Males:" + maleInt + "\n Females:" + femaleInt + "\n Total size: " + getSelectedBirds().size());
             } else {
                 if (getSelectedBirds().contains(birds.get(birdInt))) {
                     System.out.println(birds.get(birdInt).getNickName() + " could not be added. Is already selected!");
                 } else if (maleInt == 3) {
                     System.out.println(birds.get(birdInt).getNickName() + " could not be added. Too many males already!");
                 } else if (femaleInt == 3) {
-                    System.out.println(birds.get(birdInt).getNickName() + " could not be added. Too many females already!");
+//                    System.out.println(birds.get(birdInt).getNickName() + " could not be added. Too many females already!");
                 }
             }
         }
@@ -61,18 +59,6 @@ public class BirdOwner {
         }
         System.out.println(birdString);
     }
-
-//    public void seperateBird() {
-//        for (int i = 0; i < getBirds().size(); i++) {
-//            if (getBirds().get(i).getSex() == "male") {
-//                maleBirds.add(getBirds().get(i));
-//            } else {
-//                femaleBirds.add(getBirds().get(i));
-//            }
-//        }
-//    }
-
-
 
     public String getBirdlist() {
         String birdOverzicht = "";
@@ -102,7 +88,7 @@ public class BirdOwner {
             return false;
         }
 
-    public String ownerToString() {
-        return getName() + " has the birds: " + "\n" + getBirdlist();
+    public void ownerToString() {
+        System.out.println(getName() + " has the birds: " + "\n" + getBirdlist());
     }
 }

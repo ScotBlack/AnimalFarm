@@ -3,7 +3,38 @@ package huiswerk.relaties.one;
 public class MainCar {
 
     public static void main(String[] args) {
-        Car golfje = new Car("234-AB-12", "Volkswagen", "Golf", 234_123, false);
+        CarOwner sjoerd = new CarOwner("Sjoerd");
+
+        CarDealer vwdealer = new CarDealer ("Volkswagen Dealer");
+
+        Car golfje = new Car("234-AB-12", "Volkswagen", "Golf", 234_123, false, null );
+        Car corsaatje = new Car("128-ZX-92", "Opel", "Corsa", 120_876, false, null);
+
+
+        System.out.println("owner cars: " + sjoerd.getOwnerCars().size());
+        System.out.println("cars in dealer: " + vwdealer.getDealerCars().size());
+        System.out.println("Car owned by: " + golfje.getOwner());
+
+        sjoerd.buyCar(golfje, vwdealer);
+
+        System.out.println("owner cars: " + sjoerd.getOwnerCars().size());
+        System.out.println("cars in dealer: " + vwdealer.getDealerCars().size());
+        System.out.println("Car owned by: " + golfje.getOwner());
+
+        sjoerd.sellCar(golfje, vwdealer);
+        sjoerd.buyCar(corsaatje, vwdealer);
+
+        System.out.println("owner cars: " + sjoerd.getOwnerCars().size());
+        System.out.println("cars in dealer: " + vwdealer.getDealerCars().size());
+        System.out.println("Car owned by: " + golfje.getOwner());
+
+        sjoerd.buyCar(golfje, vwdealer);
+
+        System.out.println("owner cars: " + sjoerd.getOwnerCars().size());
+        System.out.println("cars in dealer: " + vwdealer.getDealerCars().size());
+        System.out.println("Car owned by: " + golfje.getOwner());
+
+
     }
 }
 
